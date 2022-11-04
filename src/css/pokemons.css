@@ -1,0 +1,49 @@
+.pokemonsContentCont{
+    padding: 0vw 5vw 0vw 5vw;
+    font-size: 0.8rem;
+}
+.pokemonsContentCont{
+    margin-top: 1rem;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    gap: 1rem;
+}
+.pokedex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.browserCont{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.searchCont{
+    background-color: lightcoral;
+    width: fit-content;
+    height: 3rem;
+    width: 60%;
+}
+.searchCont>input{
+    height: 100%;
+    width: 75%;
+}
+.searchCont>button{
+    height: 100%;
+    width: 25%;
+}
+
+.browserCont>select{
+    width: calc(40% - 1rem);
+}
+.cardListCont{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0rem 1rem 0rem;
+}

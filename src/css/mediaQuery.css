@@ -1,0 +1,110 @@
+@media only screen and (min-width: 1920px) {
+    .cardListCont {
+        column-gap: 7vw;
+    }
+    .aboutMe>div{
+        font-size: 2rem;
+    }
+    .socialMedia>ul>li>img{
+        width: 7rem;
+    }
+    .projectInfo>div{
+        font-size: 1.4rem;
+        height: 17rem;
+    }
+    .projectInfo>div>ul{
+        font-size: 1.6rem;
+    }
+    .projectInfo{
+        margin-top: 3rem;
+    }
+    .seeMore{
+        font-size: 2rem!important;
+    }
+    .seeMore>button{
+        font-size: 2rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .cardListCont {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .projectInfo>div{
+        height: 15rem;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .cardListCont {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5vw;
+    }
+    .Skills>ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .aboutMe>div{
+        width: 96vw;
+    }
+    .projectInfo{
+        gap: 3rem;
+    }
+    .homeCont{
+        padding-bottom: 9rem;
+    }
+    .projectInfo{
+        flex-direction: column;
+    }
+    .projectInfo>div{
+        width: 96vw;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .cardListCont {
+        grid-template-columns: 1fr;
+    }
+    .browserCont {
+        flex-direction: column;
+        width: 100%;
+    }
+    .searchCont{
+        width: 100%;
+    }
+    .browserCont>select{
+        width: 100%;
+    }
+    .loginFormCont{
+        width: 80vw;
+    }
+    .loginComp>img{
+        width: 80vw;
+    }
+    .loginComp>h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .loginComp>h2{
+        text-align: center;
+        font-size: 1.5ssssssssssssrem;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .basicInfo{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

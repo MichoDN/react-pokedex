@@ -1,0 +1,96 @@
+:root {
+    --borderColor: rgba(0, 0, 0, 0.384);
+}
+
+.homeCont {
+    /* background-color: white; */
+    height: 100vh;
+    overflow: hidden;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.aboutMe>div {
+    border: 2px solid var(--borderColor);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 1px var(--borderColor);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 48vw;
+    font-size: 1.4rem;
+}
+
+.socialMedia {
+    padding-left: 4rem !important;
+}
+
+.socialMedia>ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.socialMedia>ul>li>img {
+    width: 5rem;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3vw;
+    margin-top: 1rem;
+}
+
+.projectInfo>div {
+    border: 2px solid var(--borderColor);
+    box-shadow: 0px 0px 10px 1px var(--borderColor);
+    border-radius: 0.5rem;
+    height: 12.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.projectInfo>div>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.3rem;
+}
+
+.devDep {
+    width: 23vw;
+    padding-left: 2rem;
+}
+
+.homeCharacteristics {
+    width: 24vw;
+    padding-left: 2rem;
+}
+
+.seeMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 48vw;
+    padding: 1rem;
+}
+
+.seeMore>button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: fit-content;
+}

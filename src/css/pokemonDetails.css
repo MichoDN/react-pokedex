@@ -1,0 +1,175 @@
+.pokemonDetailsCont {
+    padding: 0vw 5vw 4rem 5vw;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.detailsImgCont {
+    width: 100%;
+    border: white 0.3rem solid;
+    border-radius: 0.5rem;
+}
+
+.pokeDetailsContainer {
+    background-color: white;
+    height: fit-content;
+    padding: 0rem 0rem 5rem 0rem;
+    width: 100%;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.333);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pokeDetailsBody {
+    padding: 0vw 10vw 0vw 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.detailsImgCont {
+    display: flex;
+    justify-content: center;
+    height: 13rem;
+}
+
+.detailsImgCont>img {
+    position: absolute;
+    top: 9rem;
+    width: 20rem;
+}
+
+.pokeDetailsBody>label {
+    padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+    border: 1px solid rgba(73, 73, 73, 0.486);
+    font-size: large;
+    font-weight: 600;
+}
+
+.inDetailsNameCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.physicalInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.physicalInfo>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basicInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.basicInfo>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basicInfo>div>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.basicInfo>div>ul>li {
+    border: 1px solid rgba(116, 116, 116, 0.719);
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.178);
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.statsHeader>h1 {
+    padding-left: 3rem;
+}
+
+.underLineDeco {
+    background-color: rgba(128, 128, 128, 0.664);
+    width: 85vw;
+    height: 0.01rem;
+    margin-top: 0.3rem;
+}
+
+.stats>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.progressBar {
+    background-color: #F7F7F7;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.178);
+    height: 2rem;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.progressBar>div {
+    background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+    border-radius: 4px;
+    height: 100%;
+}
+
+.statLabel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movements {
+    padding: 3rem 5vw 3rem 5vw;
+    gap: 2rem;
+}
+
+.movements>ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movements>ul>li {
+    width: fit-content;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.171);
+}

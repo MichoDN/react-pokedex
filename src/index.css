@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+button {
+    background-color: #D93F3F;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.375);
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #d92727;
+    transform: scale(1.03);
+}
+
+input{
+    border: none;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.375);
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+}
+
+input:focus{
+    outline: rgba(0, 0, 0, 0.185) solid 2px;
+}
+
+select{
+    border: none;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.375);
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+}
+select:focus{
+    outline: rgba(0, 0, 0, 0.185) solid 2px;
+}
+option{
+    border: none;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.375);
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(70, 70, 70);
+}
+
+.components {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+.importantText{
+    color: #FE1936;
+}
+
+.goBack{
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 6.75rem;
+    left: 2vw;
+}
+.goBack:hover{
+    user-select: none;
+    cursor: pointer;
+    animation: zoomGoBack 0.2s forwards;
+    background-color: black;
+}
+.pagination{
+    margin: 1rem;
+    margin-bottom: 4rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+@keyframes zoomGoBack{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
