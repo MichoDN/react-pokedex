@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux';
-import { selectedTypeThunk } from '../store/slices/SelectedType.slice';
+import { selectedTypeThunk } from '../store/slices/selectedType.slice';
 import { setCurrentSearch } from '../store/slices/currentSearch.slice';
 
 const Browser = () => {
