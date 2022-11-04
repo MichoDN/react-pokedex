@@ -43,7 +43,7 @@ const Browser = () => {
                     id='browserInput'
                     type="text"
                     placeholder='Seach a pokemon name...'
-                    onChange={ev => setBrowserInput(ev.target.value)}
+                    onChange={ev => setBrowserInput(ev.target.value.toLowerCase)}
                     onKeyDown={ev => browserHandler(ev)}
                     value={browserInput}
                 />
