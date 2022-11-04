@@ -36,6 +36,13 @@
     .projectInfo>div{
         height: 15rem;
     }
+    .homeDescriptionCont{
+        font-size: 1.2rem!important;
+    }
+    .projectInfo>div{
+        height: 12rem;
+        font-size: 0.9rem!important;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
