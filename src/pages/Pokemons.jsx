@@ -40,7 +40,8 @@ const Pokemons = () => {
                     return pokemon
                 }
             } else {
-                if (pokemon.pokemon.name.includes(currentSearch.toLowerCase())) {
+                if (pokemon.pokemon.name.toLowerCase().includes(currentSearch.toLowerCase())) {
+                    console.log(currentSearch.toLowerCase())
                     return pokemon
                 }
             }
