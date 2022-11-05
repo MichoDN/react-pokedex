@@ -24,9 +24,9 @@ const Home = () => {
                 <div className="socialMedia">
                     <h2>Contact</h2>
                     <ul>
-                        <li><img src={facebookIcon} alt="" /></li>
-                        <li><img src={githubIcon} alt="" /></li>
-                        <li><img src={linkedInIcon} alt="" /></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100087621905116"><img src={facebookIcon} alt="" /></a></li>
+                        <li><a href="https://github.com/MichoDN"><img src={githubIcon} alt="" /></a></li>
+                        <li><a href="https://www.linkedin.com/in/michael-decena"><img src={linkedInIcon} alt="" /></a></li>
                     </ul>
                 </div>
             </div>

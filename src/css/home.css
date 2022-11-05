@@ -41,8 +41,12 @@
     gap: 1rem;
 }
 
-.socialMedia>ul>li>img {
+.socialMedia>ul>li>a>img {
     width: 5rem;
+}
+
+.socialMedia>ul>li>a>img:hover {
+    animation: socialMediaIconZoom 1s linear infinite;
 }
 
 .projectInfo {
@@ -93,4 +97,16 @@
 .seeMore>button {
     padding: 0.5rem 1rem 0.5rem 1rem;
     width: fit-content;
+}
+
+@keyframes socialMediaIconZoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
