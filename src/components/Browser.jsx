@@ -20,6 +20,7 @@ const Browser = () => {
             dispatch(setCurrentSearch(browserInput))
             ev.target.blur()
         } else if (ev === 'button') {
+            dispatch(setCurrentSearch(browserInput))
         }
     }
 
