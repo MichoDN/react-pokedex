@@ -25,7 +25,10 @@ const PokemonDetail = () => {
     return (
         <>
             <DecorationTwo />
-            <a className='goBack' onClick={() => navigate('/pokemons')}>Go back</a>
+            <a className='goBack' onClick={() => {
+                window.scroll(0,0);
+                navigate('/pokemons')
+                }}>Go back</a>
             <div className='pokemonDetailsCont components'>
                 <div className='pokeDetailsContainer'>
                     <div className='detailsImgCont' style={{ backgroundColor: mainTypeColor }}>

@@ -36,7 +36,6 @@ const Pokemons = () => {
     useEffect(() => {
         const searchToLowerCase = currentSearch.toLowerCase()
         let filteredBySearch = selectedList.filter((pokemon) => {
-            console.log (searchToLowerCase)
             if (pokemon.name) {
                 if (pokemon.name.includes(searchToLowerCase)) {
                     return pokemon

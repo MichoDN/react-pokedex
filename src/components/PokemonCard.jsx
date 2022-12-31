@@ -21,7 +21,10 @@ const PokemonCard = ({ name }) => {
                 <img
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`}
                     alt="inCardImg"
-                    onClick={() => navigate(`/pokemons/${pokemon?.name}/`)}
+                    onClick={() => {
+                        navigate(`/pokemons/${pokemon?.name}/`)
+                        window.scroll(0,0);
+                    }}
                     onError={e =>{
                         e.target.onError = null 
                         e.target.src= onNotFoundImg(pokemon)
