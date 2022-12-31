@@ -8,22 +8,17 @@ const Pagination = ({ totalPosts, postPerPage }) => {
     let pages = [];
     for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) pages.push(i);
 
-    const setActualPagination = (page) => {
-        dispatch(setCurrentPage(page))
-    }
+    const displayPages = pages.filter((page) => page <= currentPage + 2 && page >= currentPage - 2)
 
-    const pagShower = (page) => {
-        if (page > currentPage + 2) return "none" 
-        else if (page < currentPage - 2) return "none"
-    }
+    const setActualPagination = (page) => dispatch(setCurrentPage(page))
+
     return (
         <div>
-            {pages.map((page, i) => (
+            {displayPages.map((page, i) => (
                 <button
                     className='pagination'
                     key={i}
                     onClick={() => setActualPagination(page)}
-                    style={{display:pagShower(page), width:"5rem"}}
                 >
                     {page}
                 </button>

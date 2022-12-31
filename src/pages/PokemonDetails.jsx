@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import colors from '../assets/colors.json'
 import DecorationTwo from '../components/DecorationTwo'
+import onNotFoundImg from '../hooks/notFoundImgHoook';
 
 const PokemonDetail = () => {
     const { name } = useParams();
@@ -29,8 +30,12 @@ const PokemonDetail = () => {
                 <div className='pokeDetailsContainer'>
                     <div className='detailsImgCont' style={{ backgroundColor: mainTypeColor }}>
                         <img
-                            src={`https://cdn.traction.one/pokedex/pokemon/${pokemon?.id}.png`}
+                            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`}
                             alt="inDetailsImg"
+                            onError={e =>{
+                                e.target.onError = null 
+                                e.target.src= onNotFoundImg(pokemon)
+                            }}
                         />
                     </div>
                     <div className='pokeDetailsBody'>

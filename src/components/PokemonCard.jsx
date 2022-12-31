@@ -16,10 +16,10 @@ const PokemonCard = ({ name }) => {
     const cardColor = colors.filter((color) => color.type === pokemon?.types[0].type.name)
 
     return (
-        <div className='pokemonCardCont' style={{ border: `${cardColor[0]?.color} 3px solid` }}>
+        <div className='pokemonCardCont' style={{ border: `${cardColor[0]?.color} 3px solid`, boxShadow: `0px 0px 1px 2px ${cardColor[0]?.color}`}}>
             <div className='cardImgCont' style={{ background: cardColor[0]?.color }}>
                 <img
-                    src={`https://cdn.traction.one/pokedex/pokemon/${pokemon?.id}.png`}
+                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`}
                     alt="inCardImg"
                     onClick={() => navigate(`/pokemons/${pokemon?.name}/`)}
                     onError={e =>{

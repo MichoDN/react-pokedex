@@ -4,8 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.432);
+    border-radius: 0.5rem;
 }
 
 .pokemonCardCont>ul {
@@ -13,8 +12,6 @@
 }
 
 .cardImgCont {
-    border-top-left-radius: 0.7rem;
-    border-top-right-radius: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +22,8 @@
 .cardImgCont>img {
     position: absolute;
     margin-top: 1.5rem;
-    width: 11rem;
+    max-height: 10rem;
+    max-width: 12rem;
     object-fit: contain;
 }
 
@@ -36,7 +34,6 @@
 
 .pokemonCardCont>h1 {
     margin-top: 3rem;
-    text-shadow: 0px 0px 2px #00000070;
 }
 
 .inCardTypes {
@@ -63,7 +60,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-shadow: 0px 0px 2px #646464d8;
     font-weight: 700;
 }
 
