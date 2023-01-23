@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const postPerPageSlice = createSlice({
     name: 'postPerPage',
-    initialState: 12,
+    initialState: 6,
     reducers: {
         setPostPerPage: (state, actions) => actions.payload 
     }
