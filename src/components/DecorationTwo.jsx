@@ -33,7 +33,6 @@ const Decorationtwo = () => {
                 alt=""
                 style={{
                     height:"4.5rem",
-                    maxWidth:"80vw",
                     position:"absolute",
                     left:"5vw",
                     top:"0.5rem"

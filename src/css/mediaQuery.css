@@ -59,16 +59,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 1rem;
     }
     .aboutMe>div{
         width: 96vw;
     }
     .projectInfo{
-        gap: 3rem;
-    }
-    .homeCont{
-        padding-bottom: 9rem;
+        gap: 1rem;
     }
     .projectInfo{
         flex-direction: column;
@@ -113,5 +110,9 @@
         align-items: center;
         display: flex;
         flex-direction: column;
+    }
+    .deco>img{
+        width: 90vw;
+        object-fit: contain;
     }
 }

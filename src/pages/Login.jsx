@@ -19,6 +19,7 @@ const Login = () => {
     }
     
     return (
+        <>
         <div className='loginComp components'>
             <img src={pokedexText} alt="pokedexText" />
             
@@ -35,8 +36,10 @@ const Login = () => {
                 />
                 <button onClick={() => enterHandler(13)}>Start</button>
             </div>
-            <Decoration />
         </div>
+        
+        <Decoration />
+        </>
     );
 };
 
