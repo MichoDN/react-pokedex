@@ -73,6 +73,9 @@
     .projectInfo>div{
         width: 96vw;
     }
+    .loginComp>img{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 675px) {
@@ -90,18 +93,13 @@
         width: 100%;
     }
     .loginFormCont{
-        width: 80vw;
+        width: 90vw;
     }
-    .loginComp>img{
-        width: 80vw;
-    }
-    .loginComp>h1{
-        text-align: center;
+    .loginComp>div>h1{
         font-size: 2rem;
     }
-    .loginComp>h2{
-        text-align: center;
-        font-size: 1.5ssssssssssssrem;
+    .loginComp>div>h2{
+        font-size: 1.5rem;
     }
 }
 
@@ -111,8 +109,13 @@
         display: flex;
         flex-direction: column;
     }
-    .deco>img{
+    .pokemonCardCont{
         width: 90vw;
-        object-fit: contain;
+    }
+    .loginComp>div>h1{
+        font-size: 1.7rem;
+    }
+    .loginComp>div>h2{
+        font-size: 1.3rem;
     }
 }

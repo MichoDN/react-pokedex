@@ -23,15 +23,18 @@
 
 .searchCont{
     background-color: lightcoral;
+    display: flex;
     width: fit-content;
     height: 3rem;
     width: 60%;
 }
 .searchCont>input{
     height: 100%;
-    width: 75%;
+    max-width: 75%;
+    flex-grow: 1;
 }
 .searchCont>button{
+    min-width: fit-content;
     height: 100%;
     width: 25%;
 }
@@ -40,10 +43,17 @@
     width: calc(40% - 1rem);
 }
 .cardListCont{
-    width: fit-content;
+    width: 100%;
+    /* background-color: red; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
-    gap: 3rem;
+    row-gap: 2rem;
     padding: 1rem 0rem 1rem 0rem;
+}
+
+.cardListCont>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

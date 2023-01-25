@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import Browser from '../components/Browser';
-import DecorationTwo from '../components/DecorationTwo'
 import PokemonCard from '../components/PokemonCard';
 import Pagination from '../components/Pagination';
 
@@ -58,7 +57,6 @@ const Pokemons = () => {
 
     return (
         <>
-            <DecorationTwo />
             <a className='goBack' onClick={() => goBackFunct()}>Go back</a>
             <div className='pokemonsComp components'>
                 <div className='pokemonsContentCont'>
@@ -67,7 +65,9 @@ const Pokemons = () => {
                         <Browser />
                         <div className="cardListCont">
                             {showedPokemons?.map((pokemon) => (
-                                <PokemonCard key={pokemon.url} name={pokemon.name} />
+                                <div  key={pokemon.url}>
+                                    <PokemonCard name={pokemon.name} />
+                                </div>
                             ))}
                         </div>
 

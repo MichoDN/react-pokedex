@@ -1,5 +1,6 @@
 import { HashRouter, Routes, Route, } from "react-router-dom";
-import Decorationtwo from "./components/DecorationTwo";
+import BottomNav from "./components/BottomNav";
+import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -10,6 +11,7 @@ import ProtectedRoutes from "./pages/ProtectedRoutes";
 function App() {
   return (
     <HashRouter>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -18,6 +20,7 @@ function App() {
           <Route path="/pokemons/:name" element={<PokemonDetail />} />
         </Route>
       </Routes>
+      <BottomNav/>
     </HashRouter>
   )
 }

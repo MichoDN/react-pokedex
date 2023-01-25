@@ -16,18 +16,24 @@ const PokemonCard = ({ name }) => {
     const cardColor = colors.filter((color) => color.type === pokemon?.types[0].type.name)
 
     return (
-        <div className='pokemonCardCont' style={{ border: `${cardColor[0]?.color} 3px solid`, boxShadow: `0px 0px 1px 2px ${cardColor[0]?.color}`}}>
+        <div className='pokemonCardCont'
+            style={{
+                border: `${cardColor[0]?.color} 3px solid`,
+                boxShadow: `0px 0px 1px 2px ${cardColor[0]?.color}`,
+                backgroundColor:"white"
+            }}
+        >
             <div className='cardImgCont' style={{ background: cardColor[0]?.color }}>
                 <img
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`}
                     alt="inCardImg"
                     onClick={() => {
                         navigate(`/pokemons/${pokemon?.name}/`)
-                        window.scroll(0,0);
+                        window.scroll(0, 0);
                     }}
-                    onError={e =>{
-                        e.target.onError = null 
-                        e.target.src= onNotFoundImg(pokemon)
+                    onError={e => {
+                        e.target.onError = null
+                        e.target.src = onNotFoundImg(pokemon)
                     }}
                 />
             </div>
@@ -35,11 +41,9 @@ const PokemonCard = ({ name }) => {
             <h1 style={{ color: cardColor[0]?.color }}>{pokemon?.name}</h1>
 
             <ul className="inCardTypes">
-                {
-                    pokemon?.types.map((type) => (
-                        <li key={type.type.url}>{type.type.name}</li>
-                    ))
-                }
+                {pokemon?.types.map((type) => (
+                    <li key={type.type.url}>{type.type.name}</li>
+                ))}
             </ul>
             <h4 className='ulTopic'>Type</h4>
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import DecorationTwo from "../components/DecorationTwo"
 
 import facebookIcon from '../assets/facebookIcon.svg'
 import githubIcon from '../assets/githubIcon.svg'
@@ -9,7 +8,6 @@ const Home = () => {
     const navigate = useNavigate()
     return (
         <>
-            <DecorationTwo />
             <div className='homeCont components'>
                 <div className='aboutMe'>
                     <div className='homeDescriptionCont'>

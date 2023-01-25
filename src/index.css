@@ -65,6 +65,7 @@ option{
 .components {
     width: 100vw;
     height: fit-content;
+    min-height: calc(100vh - 20rem);
 }
 
 .importantText{
@@ -85,8 +86,7 @@ option{
     background-color: black;
 }
 .pagination{
-    margin: 1rem;
-    margin-bottom: 4rem;
+    margin: 0rem 1rem 0 1rem;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 

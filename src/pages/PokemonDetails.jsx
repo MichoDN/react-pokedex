@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import colors from '../assets/colors.json'
-import DecorationTwo from '../components/DecorationTwo'
 import onNotFoundImg from '../hooks/notFoundImgHoook';
 
 const PokemonDetail = () => {
@@ -24,7 +23,6 @@ const PokemonDetail = () => {
 
     return (
         <>
-            <DecorationTwo />
             <a className='goBack' onClick={() => {
                 window.scroll(0,0);
                 navigate('/pokemons')
@@ -50,7 +48,6 @@ const PokemonDetail = () => {
 
                         <div className='inDetailsNameCont'>
                             <h1>{name}</h1>
-                            <div className="underLineDeco" />
                         </div>
 
                         <div className='physicalInfo'>
@@ -93,7 +90,6 @@ const PokemonDetail = () => {
                         <div className="stats">
                             <div className='statsHeader'>
                                 <h1>Stats</h1>
-                                <div className="underLineDeco" />
                             </div>
                             <ul>
                                 <li>
@@ -119,7 +115,6 @@ const PokemonDetail = () => {
                 <div className="movements pokeDetailsContainer">
                     <div className='statsHeader'>
                         <h1>Movements</h1>
-                        <div className="underLineDeco" />
                     </div>
                     <ul>
                         {
