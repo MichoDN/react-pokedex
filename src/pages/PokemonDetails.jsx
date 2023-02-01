@@ -112,7 +112,7 @@ const PokemonDetail = () => {
                         </div>
                     </div>
                 </div>
-                <div className="movements pokeDetailsContainer">
+                {/* <div className="movements pokeDetailsContainer">
                     <div className='statsHeader'>
                         <h1>Movements</h1>
                     </div>
@@ -123,7 +123,7 @@ const PokemonDetail = () => {
                             ))
                         }
                     </ul>
-                </div>
+                </div> */}
             </div>
         </>
     );

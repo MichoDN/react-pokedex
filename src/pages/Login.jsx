@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import pokedexText from '../assets/pokedexText.png'
 import { useDispatch } from 'react-redux'
 import { setName } from '../store/slices/userName.slice';
 import { useNavigate } from 'react-router-dom'
+import oakIMG from '../assets/oak.png'
 const Login = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -34,7 +34,7 @@ const Login = () => {
                     <button onClick={() => enterHandler(13)}>Start</button>
                 </div>
             </div>
-            <img src="../src/assets/oak.png" alt="oak"/>
+            <img src={oakIMG} alt="oak"/>
         </div>
     );
 };
