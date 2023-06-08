@@ -8,6 +8,8 @@ import capFirstLetter from "../hooks/capFirstLetter"
 import getRandomId from '../hooks/getRandomId';
 import pokeAPI from '../api/pokeAPI';
 
+import pokedexLogo from "../assets/images/pokedex.png"
+
 const generatePath = (location) => {
   const parts = location.split("/").filter((part) => part.length > 1)
   return parts
@@ -27,7 +29,7 @@ const NavBar = () => {
     <nav>
       <div className='red'>
         <div className="tooltip">
-          <img src="./src/assets/images/pokedex.png" />
+          <img src={pokedexLogo} />
         </div>
       </div>
       <div className='black'>
