@@ -1,0 +1,92 @@
+{
+  "normal": {
+    "gradientColor1": "#AFAE74",
+    "gradientColor2": "#969431",
+    "typeColor":"#969431"
+  },
+  "fighting": {
+    "gradientColor1": "#E05953",
+    "gradientColor2": "#C22E28",
+    "typeColor":"#C22E28"
+  },
+  "flying": {
+    "gradientColor1": "#9C7EF1",
+    "gradientColor2": "#AA72F1",
+    "typeColor":"#AA72F1"
+  },
+  "poison": {
+    "gradientColor1": "#D248D0",
+    "gradientColor2": "#A33EA1",
+    "typeColor":"#A33EA1"
+  },
+  "ground": {
+    "gradientColor1": "#E2BF65",
+    "gradientColor2": "#D3A01C",
+    "typeColor":"#D3A01C"
+  },
+  "rock": {
+    "gradientColor1": "#7E7E7E",
+    "gradientColor2": "#686868",
+    "typeColor":"#686868"
+  },
+  "bug": {
+    "gradientColor1": "#C0D23C",
+    "gradientColor2": "#A6B91A",
+    "typeColor":"#A6B91A"
+  },
+  "ghost": {
+    "gradientColor1": "#4E4CB1",
+    "gradientColor2": "#2E338F",
+    "typeColor":"#2E338F"
+  },
+  "steel": {
+    "gradientColor1": "#B7B7CE",
+    "gradientColor2": "#A6A6D3",
+    "typeColor":"#A7A7D3"
+  },
+  "fire": {
+    "gradientColor1": "#FF8753",
+    "gradientColor2": "#DA3636",
+    "typeColor":"#DA3636"
+  },
+  "water": {
+    "gradientColor1": "#4A96EF",
+    "gradientColor2": "#1B6FD1",
+    "typeColor":"#3380DA"
+  },
+  "grass": {
+    "gradientColor1": "#6DCA7B",
+    "gradientColor2": "#49896F",
+    "typeColor":"#49896F"
+  },
+  "electric": {
+    "gradientColor1": "#DBF02F",
+    "gradientColor2": "#ED8214",
+    "typeColor":"#EDC314"
+  },
+  "psychic": {
+    "gradientColor1": "#F95587",
+    "gradientColor2": "#DB52C5",
+    "typeColor":"#DB5273"
+  },
+  "ice": {
+    "gradientColor1": "#96D9D6",
+    "gradientColor2": "#44ABA7",
+    "typeColor":"#58BFBB"
+  },
+  "dragon": {
+    "gradientColor1": "#8961E8",
+    "gradientColor2": "#E85344",
+    "typeColor":"#7445E8"
+  },
+  "dark": {
+    "gradientColor1": "#424242",
+    "gradientColor2": "#242424",
+    "typeColor":"#242424"
+  },
+  "fairy": {
+    "gradientColor1": "#F099C4",
+    "gradientColor2": "#C4719A",
+    "typeColor":"#C5719A"
+  }
+}

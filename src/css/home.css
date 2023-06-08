@@ -1,0 +1,31 @@
+#home{
+  min-height: calc(100vh - 220px);
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+#home>header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home>header>h1{
+  color: var(--red-pokeball);
+}
+
+
+@media screen and (min-Width: 744px) {
+  #home>form>input{
+    width: 40vw;
+  }
+  #home{
+    min-height: calc(100vh - 260px);
+  }
+}
