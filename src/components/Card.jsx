@@ -29,7 +29,7 @@ const Card = ({ pokemonName }) => {
   return (
     <article className='pokemonCard cardBoxShadow'
       style={{
-        background: `linear-gradient(to bottom, ${bgColors[0]}, ${bgColors[1]})`
+        background: `conic-gradient(from 100deg at -50px 105%, ${bgColors[0]} 280deg, ${bgColors[1]} 360deg)`
       }}
       onClick={() => navigate(`/pokemons/${pokemon.name}`)}
     >
@@ -41,10 +41,8 @@ const Card = ({ pokemonName }) => {
         }
         onError={ev => { handleImgError({ ev, pokemon }) }}
       />
-
       <div>
         <h1>{capFirstLetter(pokemon?.name)}</h1>
-
         <ul>
           {pokemon?.types.map((type) => (
             <li

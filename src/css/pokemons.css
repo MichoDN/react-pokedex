@@ -45,7 +45,8 @@
   place-self: center;
 
   gap: 16px;
-  width: fit-content;
+  width: 100%;
+  max-width: 1320px;
 }
 
 #pokemonPagination {
