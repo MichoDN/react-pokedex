@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import "../css/home.css"
+import "./home.css"
+import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { setUsername } from '../store/slices/user.slice';
+import { setUsername } from '../../store/slices/user.slice';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {

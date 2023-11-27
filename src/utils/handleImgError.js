@@ -1,6 +1,6 @@
 import notFoundImg from "../assets/images/notFound.png"
 
-const handleImgError = ({ ev, pokemon }) => {
+function handleImgError ({ ev, pokemon }) {
     ev.preventDefault()
     const newImg = pokemon?.sprites?.front_default
     if (newImg) {

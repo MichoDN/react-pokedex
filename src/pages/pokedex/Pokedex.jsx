@@ -1,18 +1,18 @@
-import '../css/pokemons.css'
+import './pokemons.css'
 import { useRef, useState, useEffect } from 'react';
 
-import Card from '../components/Card';
-import { Highlight } from '../components/styledComponents';
-import capFirstLetter from '../hooks/capFirstLetter';
+import Card from '../../components/pokemonCard/PokemonCard.jsx';
+import Highlight from '../../components/highlight/highlight.jsx'
 
-import pokeAPI from '../api/pokeAPI';
+import capFirstLetter from '../../utils/capFirstLetter.js';
+import pokeAPI from '../../api/pokeAPI.js';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilteredPokemons } from '../store/slices/filteredPokemons.slice';
-import { getAllPokemonsThunk, setPokemonsByTypeThunk } from '../store/slices/pokemons.slice'
-import { setPages } from '../store/slices/pokemonPagination.slice';
+import { setFilteredPokemons } from '../../store/slices/filteredPokemons.slice.js';
+import { getAllPokemonsThunk, setPokemonsByTypeThunk } from '../../store/slices/pokemons.slice.js'
+import { setPages } from '../../store/slices/pokemonPagination.slice.js';
 
-const Pokemons = () => {
+function Pokedex () {
   const { username } = useSelector(state => state.user);
   return (
     <main id='pokemonsPage'>
@@ -22,7 +22,6 @@ const Pokemons = () => {
       </header>
 
       <PokemonFilters />
-
       <CardContainer />
     </main>
   );
@@ -146,4 +145,4 @@ const CardContainer = () => {
   </>
 }
 
-export default Pokemons;
+export default Pokedex;

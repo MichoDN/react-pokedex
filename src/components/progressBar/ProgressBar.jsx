@@ -1,4 +1,4 @@
-const ProgressBar = ({ value }) => {
+function ProgressBar ({ value }) {
   const maxValue = 200
   const percentage = (value / maxValue) * 100
   return (

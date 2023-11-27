@@ -1,17 +1,17 @@
-import '../css/pokemonDetails.css'
+import './pokemonDetails.css'
 
 import { useEffect, useState } from 'react';
 
 import { useParams } from 'react-router-dom';
 
-import pokeAPI from '../api/pokeAPI';
+import pokeAPI from '../../api/pokeAPI';
 
-import pokemonColors from '../assets/pokemonColors.json'
-import getGradientColors from '../hooks/getGradientColors';
-import handleImgError from '../hooks/handleImgError';
-import capFirstLetter from '../hooks/capFirstLetter';
+import pokemonColors from '../../assets/pokemonColors.json'
+import getGradientColors from '../../utils/getGradientColors';
+import handleImgError from '../../utils/handleImgError';
+import capFirstLetter from '../../utils/capFirstLetter';
 
-import ProgressBar from '../components/ProgressBar';
+import ProgressBar from '../../components/progressBar/ProgressBar';
 
 const PokemonDetails = () => {
   const { name } = useParams();

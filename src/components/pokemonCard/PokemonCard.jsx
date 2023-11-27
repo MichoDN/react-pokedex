@@ -1,12 +1,12 @@
-import '../css/pokemonCard.css'
-import React, { useEffect, useState } from 'react';
+import './pokemonCard.css'
+import { useEffect, useState } from 'react';
 
-import pokemonColors from "../assets/pokemonColors.json"
-import capFirstLetter from '../hooks/capFirstLetter';
-import getGradientColors from '../hooks/getGradientColors';
-import handleImgError from "../hooks/handleImgError"
+import pokemonColors from "../../assets/pokemonColors.json"
+import capFirstLetter from '../../utils/capFirstLetter';
+import getGradientColors from '../../utils/getGradientColors';
+import handleImgError from "../../utils/handleImgError"
 
-import pokeAPI from '../api/pokeAPI';
+import pokeAPI from '../../api/pokeAPI';
 
 import { useNavigate } from 'react-router-dom';
 

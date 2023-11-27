@@ -1,7 +1,6 @@
-import React from 'react';
-import '../css/footer.css'
+import './footer.css'
 
-const Footer = () => {
+function Footer () {
   return <footer>
     <div className='tooltip'>
       <ul>

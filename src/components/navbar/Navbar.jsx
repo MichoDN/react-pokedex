@@ -1,21 +1,18 @@
-import '../css/navbar.css'
-
-import React from 'react';
-
+import './navbar.css'
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import capFirstLetter from "../hooks/capFirstLetter"
-import getRandomId from '../hooks/getRandomId';
-import pokeAPI from '../api/pokeAPI';
+import capFirstLetter from "../../utils/capFirstLetter"
+import getRandomId from '../../utils/getRandomId';
+import pokeAPI from '../../api/pokeAPI';
 
-import pokedexLogo from "../assets/images/pokedex.png"
+import pokedexLogo from "../../assets/images/pokedex.png"
 
-const generatePath = (location) => {
+function generatePath(location) {
   const parts = location.split("/").filter((part) => part.length > 1)
   return parts
 }
 
-const NavBar = () => {
+function Navbar() {
   const location = useLocation().pathname;
   const path = generatePath(location);
   const navigate = useNavigate();
@@ -61,4 +58,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
