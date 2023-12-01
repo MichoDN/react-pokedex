@@ -2,31 +2,21 @@
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
-}
-
-#pokemonsPage>header {
-  text-align: center;
-  margin-bottom: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 #pokemonsPage>header>h1 {
   font-size: 24px;
 }
 
-#pokemonsPage>header>h2 {
-  font-size: 12px;
-}
-
 #pokemonFilters {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
 
+  gap: 10px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-
-  margin-bottom: 8px;
 }
 
 #pokemonFilters>select {
@@ -38,7 +28,6 @@
 }
 
 .cardsContainer {
-  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +35,6 @@
 
   gap: 16px;
   width: 100%;
-  max-width: 1320px;
 }
 
 #pokemonPagination {
@@ -55,7 +43,7 @@
   display: flex;
   padding: 16px 0px;
   justify-content: center;
-  gap: 10px;
+  gap: 16px;
 }
 
 #pokemonPagination>li>button {
@@ -68,11 +56,19 @@
 
 }
 
-@media screen and (min-Width:744px) {
+@media screen and (min-Width:570px) {
+  .cardsContainer {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-Width:640px) {
   #pokemonsPage {
     display: flex;
     flex-direction: column;
-    padding: 0px 31px;
   }
 
   #pokemonsPage>header {
@@ -84,14 +80,9 @@
     font-size: 21px;
   }
 
-  #pokemonsPage>header>h2 {
-    font-size: 21px;
-  }
-
   #pokemonFilters {
     flex-direction: row;
-    gap: 8px;
-    margin-bottom: 10px;
+    gap: 20px;
   }
 
   #pokemonFilters>form {
@@ -100,18 +91,6 @@
 
   #pokemonFilters>select {
     width: 280px;
-  }
-
-  .cardsContainer {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-    row-gap: 24px;
-  }
-
-  #pokemonPagination {
-    gap: 25px;
   }
 
   #pokemonPagination>li>button {
@@ -123,15 +102,14 @@
 }
 
 
-@media screen and (min-Width:1440px) {
+@media screen and (min-Width:960px) {
   #pokemonsPage {
     display: flex;
     flex-direction: column;
-    padding: 0px 60px;
+    padding: 0px 20px;
   }
 
   #pokemonsPage>header {
-    justify-content: center;
     gap: 5px;
     margin-bottom: 16px;
   }
@@ -140,31 +118,16 @@
     font-size: 32px;
   }
 
-  #pokemonsPage>header>h2 {
-    font-size: 32px;
-  }
-
-  #pokemonFilters {
-    gap: 32px;
-    padding: 0 60px;
-    margin-bottom: 16px;
-  }
-
   #pokemonFilters>select {
     width: 420px;
   }
 
   .cardsContainer {
-    display: grid;
-
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 32px;
-    row-gap: 32px;
-    place-items: center;
   }
 
   #pokemonPagination {
-    gap: 30px;
+    gap: 24px;
   }
 
   #pokemonPagination>li>button {

@@ -1,17 +1,16 @@
-import './styles.css'
-import { useEffect } from "react"
+import './styles.css';
+import { useEffect } from "react";
 
-import Home from "./pages/home/Home.jsx"
-import Pokedex from "./pages/pokedex/Pokedex.jsx"
-import PokemonDetails from "./pages/pokemonDetails/PokemonDetails.jsx"
+import Home from "./pages/home/Home.jsx";
+import Pokedex from "./pages/pokedex/Pokedex.jsx";
+import PokemonDetails from "./pages/pokemonDetails/PokemonDetails.jsx";
+import NavBar from "./components/navbar/Navbar.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
-import { useDispatch, useSelector } from "react-redux"
-import { getAllPokemonsThunk } from "./store/slices/pokemons.slice"
+import { useDispatch, useSelector } from "react-redux";
+import { getAllPokemonsThunk } from "./store/slices/pokemons.slice";
 
-import NavBar from "./components/navbar/Navbar.jsx"
-import Footer from "./components/footer/Footer.jsx"
-
-import { Route, HashRouter, Routes, Navigate, Outlet } from "react-router-dom"
+import { Route, HashRouter, Routes, Navigate, Outlet } from "react-router-dom";
 
 function Router() {
   const dispatch = useDispatch();
@@ -19,22 +18,20 @@ function Router() {
     dispatch(getAllPokemonsThunk());
   }, [])
 
-  return (
-    <HashRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route element={<ProtectedRoutes />}>
-          <Route path="/pokemons" element={<Pokedex />} />
-          <Route path="/pokemons/:name" element={<PokemonDetails />} />
-        </Route>
-      </Routes>
-      <Footer />
-    </HashRouter>
-  )
+  return <HashRouter>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route element={<ProtectedRoutes />}>
+        <Route path="/pokemons" element={<Pokedex />} />
+        <Route path="/pokemons/:name" element={<PokemonDetails />} />
+      </Route>
+    </Routes>
+    <Footer />
+  </HashRouter>
 }
 
-const ProtectedRoutes = () => {
+function ProtectedRoutes() {
   const { username } = useSelector(state => state.user);
   if (username !== "") {
     return <Outlet />

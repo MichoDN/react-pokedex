@@ -5,27 +5,28 @@ nav {
 
 .red {
   background-color: var(--red-pokeball);
-  padding: 10px 20px;
+  padding: 10px 0px;
   display: grid;
   place-items: center;
 }
 
-.tooltip{
+.toolbar{
   width: 100%;
   max-width: 1440px;
+  padding: 0px 20px;
 }
-.red>.tooltip>img {
+
+.red>.toolbar>img {
   width: 180px;
 }
 
 .black {
-  padding: 0 20px;
   display: grid;
   place-items: center;
   background-color: #111111;
 }
 
-.black>.tooltip {
+.black>.toolbar {
   height: 30px;
   color: white;
 
@@ -36,26 +37,25 @@ nav {
 
 }
 
-.black>.tooltip>ul {
-
+.black>.toolbar>ul {
   display: flex;
-  gap: 1rem;
+  gap: 1.5ch;
 
   font-weight: 300;
-  font-size: 8px;
+  font-size: 12px;
 }
 
-.black>.tooltip>ul>li{
+.black>.toolbar>ul>li{
   display: flex;
-  gap: 1rem;
+  gap: 1.5ch;
 }
 
-.black>.tooltip>ul li:last-child>a:hover{
+.black>.toolbar>ul li:last-child>a:hover{
   text-decoration: none;
   cursor: default;
 }
 
-.black>.tooltip>button {
+.black>.toolbar>button {
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -63,30 +63,29 @@ nav {
   background-color: white;
 }
 
-.black>.tooltip>button:hover {
+.black>.toolbar>button:hover {
   cursor: pointer;
 }
 
 
 @media screen and (min-Width:744px) {
-
-  .tooltip{
-    padding: 16px 60px;
+  .toolbar{
+    padding: 16px 20px;
   }
 
-  .red>.tooltip>img {
+  .red>.toolbar>img {
     width: 430px;
   }
 
-  .black>.tooltip {
+  .black>.toolbar {
     height: 40px;
   }
 
-  .black>.tooltip>ul {
+  .black>.toolbar>ul {
     font-size: 16px;
   }
 
-  .black>.tooltip>button {
+  .black>.toolbar>button {
     width: 100px;
     height: 100px;
     border-radius: 100%;

@@ -1,4 +1,4 @@
-import './pokemonDetails.css'
+import './pokemonDetails.css';
 
 import { useEffect, useState } from 'react';
 

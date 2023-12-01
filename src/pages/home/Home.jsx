@@ -1,4 +1,4 @@
-import "./home.css"
+import "./home.css";
 import { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { setUsername } from '../../store/slices/user.slice';
@@ -14,11 +14,11 @@ const Home = () => {
     const username = inputRef.current.value;
     if (username !== "") {
       dispatch(setUsername(username));
-      navigate("/pokemons")
+      navigate("/pokemons");
     } else {
       alert("Please, write down a proper username");
     }
-  }
+  };
   
   return <main id='home'>
     <header>

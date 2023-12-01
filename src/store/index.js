@@ -1,9 +1,9 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
 
-import pokemonsSlice from './slices/pokemons.slice'
-import filteredPokemonsSlice from './slices/filteredPokemons.slice'
-import paginationSlice from './slices/pokemonPagination.slice'
-import userSlice from './slices/user.slice'
+import pokemonsSlice from './slices/pokemons.slice';
+import filteredPokemonsSlice from './slices/filteredPokemons.slice';
+import paginationSlice from './slices/pokemonPagination.slice';
+import userSlice from './slices/user.slice';
 
 export default configureStore({
   reducer: {

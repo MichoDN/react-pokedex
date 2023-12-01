@@ -1,4 +1,4 @@
-import './pokemonCard.css'
+import './pokemonCard.css';
 import { useEffect, useState } from 'react';
 
 import pokemonColors from "../../assets/pokemonColors.json"
@@ -27,7 +27,7 @@ const Card = ({ pokemonName }) => {
   }, [pokemon])
 
   return (
-    <article className='pokemonCard cardBoxShadow'
+    <article className='pokemonCard'
       style={{
         background: `conic-gradient(from 100deg at -50px 105%, ${bgColors[0]} 280deg, ${bgColors[1]} 360deg)`
       }}
