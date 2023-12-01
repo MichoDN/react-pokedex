@@ -8,15 +8,15 @@
 }
 
 #pokemonsPage>header>h1 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 #pokemonFilters {
   width: 100%;
 
-  gap: 10px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 #pokemonFilters>select {
@@ -48,7 +48,7 @@
 
 #pokemonPagination>li>button {
   width: 30px;
-  padding: 2px 0px;
+  padding: 4px 0px;
   border-radius: 4px;
 
   color: white;
@@ -66,18 +66,8 @@
 }
 
 @media screen and (min-Width:640px) {
-  #pokemonsPage {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #pokemonsPage>header {
-    display: flex;
-    gap: 5px;
-  }
-
   #pokemonsPage>header>h1 {
-    font-size: 21px;
+    font-size: 24px;
   }
 
   #pokemonFilters {
@@ -103,21 +93,6 @@
 
 
 @media screen and (min-Width:960px) {
-  #pokemonsPage {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 20px;
-  }
-
-  #pokemonsPage>header {
-    gap: 5px;
-    margin-bottom: 16px;
-  }
-
-  #pokemonsPage>header>h1 {
-    font-size: 32px;
-  }
-
   #pokemonFilters>select {
     width: 420px;
   }

@@ -120,7 +120,7 @@ h3 {
   justify-content: space-between;
 }
 
-@media screen and (min-Width:520px) {
+@media screen and (min-Width:640px) {
   h1 {
     font-size: 48px;
   }
@@ -148,7 +148,7 @@ h3 {
 }
 
 
-@media screen and (min-Width:1440px) {
+@media screen and (min-Width:960px) {
   h1 {
     font-size: 56px;
   }

@@ -1,4 +1,4 @@
-import './pokemons.css';
+import './pokedex.css';
 import { useRef, useState, useEffect } from 'react';
 
 import Card from '../../components/pokemonCard/PokemonCard.jsx';
