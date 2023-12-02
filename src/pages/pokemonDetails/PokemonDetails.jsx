@@ -13,7 +13,7 @@ import capFirstLetter from '../../utils/capFirstLetter';
 
 import ProgressBar from '../../components/progressBar/ProgressBar';
 
-const PokemonDetails = () => {
+function PokemonDetails () {
   const { name } = useParams();
   const [pokemon, setPokemon] = useState();
   const [bgColors, setBgColors] = useState([])
