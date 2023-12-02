@@ -1,92 +1,92 @@
 {
-  "normal": {
+  "Normal": {
     "gradientColor1": "#AFAE74",
     "gradientColor2": "#969431",
-    "typeColor":"#969431"
+    "typeColor": "#969431"
   },
-  "fighting": {
+  "Fighting": {
     "gradientColor1": "#E05953",
     "gradientColor2": "#C22E28",
-    "typeColor":"#C22E28"
+    "typeColor": "#C22E28"
   },
-  "flying": {
+  "Flying": {
     "gradientColor1": "#9C7EF1",
     "gradientColor2": "#AA72F1",
-    "typeColor":"#AA72F1"
+    "typeColor": "#AA72F1"
   },
-  "poison": {
+  "Poison": {
     "gradientColor1": "#D248D0",
     "gradientColor2": "#A33EA1",
-    "typeColor":"#A33EA1"
+    "typeColor": "#A33EA1"
   },
-  "ground": {
+  "Ground": {
     "gradientColor1": "#E2BF65",
     "gradientColor2": "#D3A01C",
-    "typeColor":"#D3A01C"
+    "typeColor": "#D3A01C"
   },
-  "rock": {
+  "Rock": {
     "gradientColor1": "#7E7E7E",
     "gradientColor2": "#686868",
-    "typeColor":"#686868"
+    "typeColor": "#686868"
   },
-  "bug": {
+  "Bug": {
     "gradientColor1": "#C0D23C",
     "gradientColor2": "#A6B91A",
-    "typeColor":"#A6B91A"
+    "typeColor": "#A6B91A"
   },
-  "ghost": {
+  "Ghost": {
     "gradientColor1": "#4E4CB1",
     "gradientColor2": "#2E338F",
-    "typeColor":"#2E338F"
+    "typeColor": "#2E338F"
   },
-  "steel": {
+  "Steel": {
     "gradientColor1": "#B7B7CE",
     "gradientColor2": "#A6A6D3",
-    "typeColor":"#A7A7D3"
+    "typeColor": "#A7A7D3"
   },
-  "fire": {
+  "Fire": {
     "gradientColor1": "#FF8753",
     "gradientColor2": "#DA3636",
-    "typeColor":"#DA3636"
+    "typeColor": "#DA3636"
   },
-  "water": {
+  "Water": {
     "gradientColor1": "#4A96EF",
     "gradientColor2": "#1B6FD1",
-    "typeColor":"#1070de"
+    "typeColor": "#1070DE"
   },
-  "grass": {
+  "Grass": {
     "gradientColor1": "#6DCA7B",
     "gradientColor2": "#49896F",
-    "typeColor":"#49896F"
+    "typeColor": "#49896F"
   },
-  "electric": {
+  "Electric": {
     "gradientColor1": "#DBF02F",
     "gradientColor2": "#ED8214",
-    "typeColor":"#EDC314"
+    "typeColor": "#EDC314"
   },
-  "psychic": {
+  "Psychic": {
     "gradientColor1": "#F95587",
     "gradientColor2": "#DB52C5",
-    "typeColor":"#DB5273"
+    "typeColor": "#DB5273"
   },
-  "ice": {
+  "Ice": {
     "gradientColor1": "#96D9D6",
     "gradientColor2": "#44ABA7",
-    "typeColor":"#58BFBB"
+    "typeColor": "#58BFBB"
   },
-  "dragon": {
+  "Dragon": {
     "gradientColor1": "#8961E8",
     "gradientColor2": "#E85344",
-    "typeColor":"#7445E8"
+    "typeColor": "#7445E8"
   },
-  "dark": {
+  "Dark": {
     "gradientColor1": "#424242",
     "gradientColor2": "#242424",
-    "typeColor":"#242424"
+    "typeColor": "#242424"
   },
-  "fairy": {
+  "Fairy": {
     "gradientColor1": "#F099C4",
     "gradientColor2": "#C4719A",
-    "typeColor":"#C5719A"
+    "typeColor": "#C5719A"
   }
 }

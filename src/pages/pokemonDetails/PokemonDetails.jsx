@@ -9,9 +9,9 @@ import pokeAPI from '../../api/pokeAPI';
 import pokemonColors from '../../assets/pokemonColors.json'
 import getGradientColors from '../../utils/getGradientColors';
 import handleImgError from '../../utils/handleImgError';
-import capFirstLetter from '../../utils/capFirstLetter';
 
 import ProgressBar from '../../components/progressBar/ProgressBar';
+import PokemonData from '../../models/PokemonData.model';
 
 function PokemonDetails () {
   const { name } = useParams();
@@ -20,13 +20,15 @@ function PokemonDetails () {
   useEffect(() => {
     pokeAPI.get(`/pokemon/${name}`)
       .then(res => {
-        setPokemon(res.data)
+        const pokemonData = new PokemonData(res);
+        setPokemon(pokemonData);
+        console.log(pokemonData)
       })
   }, [])
 
   useEffect(() => {
     if (pokemon) {
-      const colors = getGradientColors(pokemon?.types[0]?.type?.name);
+      const colors = getGradientColors(pokemon?.types[0]?.name);
       setBgColors(colors);
     }
   }, [pokemon]);
@@ -52,19 +54,19 @@ function PokemonDetails () {
 
       <section id='mainData'>
         <OutlinedCard>Nº{pokemon?.id}</OutlinedCard>
-        <h1>{capFirstLetter(pokemon?.name)}</h1>
+        <h1>{pokemon?.name}</h1>
         <Divider />
 
         <ul id="types">
           {pokemon?.types.map((type) => (
             <li
               className='cardTypeShadow'
-              key={`type ${type.type.name}`}
+              key={`type ${type.name}`}
               style={{
-                background: pokemonColors[type?.type?.name].typeColor,
+                background: pokemonColors[type?.name].typeColor,
               }}
             >
-              {capFirstLetter(type.type.name)}
+              {type.name}
             </li>
           ))}
         </ul>
@@ -89,10 +91,10 @@ function PokemonDetails () {
         <ul>
           {pokemon?.abilities.map((ability) => (
             <li
-              key={`ability${ability.ability.name}`}
+              key={`ability${ability.name}`}
             >
               <OutlinedCard width="150px">
-                {capFirstLetter(ability.ability.name)}
+                {ability.name}
               </OutlinedCard>
             </li>
           ))}
@@ -105,14 +107,14 @@ function PokemonDetails () {
         <ul>
           {pokemon?.stats.map((stat) => (
             <li
-              key={`stat${stat.stat.name}`}
+              key={`stat${stat.name}`}
             >
               <header>
-                <h4>{capFirstLetter(stat.stat.name)}</h4>
-                <p htmlFor={stat.stat.name}>{stat.base_stat}/200</p>
+                <h4>{stat.name}</h4>
+                <p htmlFor={stat.name}>{stat.base_stat}/200</p>
               </header>
               <ProgressBar
-                id={stat.stat.name}
+                id={stat.name}
                 value={stat.base_stat}
               />
             </li>

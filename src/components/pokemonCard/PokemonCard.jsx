@@ -2,36 +2,39 @@ import './pokemonCard.css';
 import { useEffect, useState } from 'react';
 
 import pokemonColors from "../../assets/pokemonColors.json"
-import capFirstLetter from '../../utils/capFirstLetter';
 import getGradientColors from '../../utils/getGradientColors';
 import handleImgError from "../../utils/handleImgError"
 
 import pokeAPI from '../../api/pokeAPI';
 
 import { useNavigate } from 'react-router-dom';
+import PokemonCard from '../../models/PokemonCard.model';
 
 const Card = ({ pokemonName }) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [pokemon, setPokemon] = useState();
-  const [bgColors, setBgColors] = useState([])
+  const [bgColors, setBgColors] = useState([]);
   useEffect(() => {
     !pokemon && pokeAPI.get(`/pokemon/${pokemonName}`)
-      .then(res => { setPokemon(res.data) })
-  }, [])
+      .then(res => {
+        const pokemonCard = new PokemonCard(res);
+        setPokemon(pokemonCard);
+      });
+  }, []);
 
   useEffect(() => {
     if (pokemon) {
-      const colors = getGradientColors(pokemon?.types[0]?.type?.name);
-      setBgColors(colors)
+      const colors = getGradientColors(pokemon?.types[0]?.name);
+      setBgColors(colors);
     }
-  }, [pokemon])
+  }, [pokemon]);
 
   return (
     <article className='pokemonCard'
       style={{
         background: `conic-gradient(from 100deg at -50px 105%, ${bgColors[0]} 280deg, ${bgColors[1]} 360deg)`
       }}
-      onClick={() => navigate(`/pokemons/${pokemon.name}`)}
+      onClick={() => navigate(`/pokemons/${pokemon.name.toLowerCase()}`)}
     >
       <img
         src={
@@ -42,17 +45,17 @@ const Card = ({ pokemonName }) => {
         onError={ev => { handleImgError({ ev, pokemon }) }}
       />
       <div>
-        <h1>{capFirstLetter(pokemon?.name)}</h1>
+        <h1>{pokemon?.name}</h1>
         <ul>
           {pokemon?.types.map((type) => (
             <li
               className='cardTypeShadow'
               key={type.slot}
               style={{
-                background: pokemonColors[type?.type?.name].typeColor
+                background: pokemonColors[type?.name].typeColor
               }}
             >
-              {capFirstLetter(type.type.name)}
+              {type.name}
             </li>
           ))}
         </ul>
