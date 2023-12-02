@@ -22,7 +22,6 @@ function PokemonDetails () {
       .then(res => {
         const pokemonData = new PokemonData(res);
         setPokemon(pokemonData);
-        console.log(pokemonData)
       })
   }, [])
 
